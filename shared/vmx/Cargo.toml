@@ -1,0 +1,8 @@
+[package]
+name = "vmx"
+version = "0.1.0"
+authors = ["thebarbershopper <cld251@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+x86_64 = "0.7.1"

@@ -1,0 +1,14 @@
+[package]
+name = "tftp-server"
+version = "0.1.0"
+authors = ["randomlshb@gmail.com <randomlshb@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+packets = { path = "../shared/packets" }
+noodle = { path = "../shared/noodle" }
+lazy_static = "*"
+sha2 = "0.5.2"
+chrono = "0.4.10"

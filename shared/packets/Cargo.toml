@@ -1,0 +1,16 @@
+[package]
+name = "packets"
+version = "0.1.0"
+authors = ["randomlshb@gmail.com <randomlshb@gmail.com>"]
+edition = "2018"
+
+[features]
+"proto-ipv4" = []
+
+default = [
+"proto-ipv4"
+]
+
+[dependencies]
+byteorder = { version = "1.0", default-features = false }
+

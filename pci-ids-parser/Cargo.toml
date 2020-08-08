@@ -1,0 +1,9 @@
+[package]
+name = "pci-ids-parser"
+version = "0.1.0"
+authors = ["thebarbershopper <cld251@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+regex = "1.1.6"
+lazy_static = "1.3.0"

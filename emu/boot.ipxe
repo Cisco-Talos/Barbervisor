@@ -1,0 +1,14 @@
+#!ipxe
+ifopen net0
+
+set net0/ip 192.168.10.2
+set net0/netmask 255.255.255.0
+set net0/dns 192.168.10.1
+set net0/gateway ${net0/dns}
+set net0/next-server ${net0/dns}
+set net0/filename barberslice.boot
+
+# Verify settings with user
+# config net0
+
+chain ${net0/filename}

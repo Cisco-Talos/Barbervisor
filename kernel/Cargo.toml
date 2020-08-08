@@ -1,0 +1,54 @@
+[package]
+name = "kernel"
+version = "0.1.0"
+authors = ["Cory Duplantis <cld251@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+serial = { path = "../shared/serial" }
+cpu = { path = "../shared/cpu" }
+rangeset = { path = "../shared/rangeset" }
+mmu = { path = "../shared/mmu" }
+safecast = { path = "../shared/safecast" }
+bytesafe_derive = { path = "../shared/safecast/bytesafe_derive" }
+packets = { path = "../shared/packets" }
+noodle = { path = "../shared/noodle" }
+bitflags = "1.2.1"
+log = "0.4.6"
+x86_64 = "0.11.1"
+linked_list_allocator = "0.8.2"
+spin = "0.5.2"
+pic8259_simple = "0.2.0"
+pc-keyboard = "0.3.1"
+cpuio = "0.3.0"
+sha2 = "0.5.2"
+bit_field = "0.9.0"
+volatile = "0.2.6"
+
+[dependencies.hashbrown]
+version = "0.6.2"
+features = ["nightly"]
+
+[dependencies.lazy_static]
+version = "1.0"
+features = ["spin_no_std"]
+
+[profile.release]
+panic = "abort"
+lto = false
+# debug = true
+
+[profile.dev]
+panic = "abort"
+
+[dependencies.num]
+version = "0.2"
+default-features = false
+
+[dependencies.num-traits]
+version = "0.2"
+default-features = false
+
+[dependencies.num-derive]
+version = "0.2"
+default-features = false
