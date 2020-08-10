@@ -2,6 +2,8 @@
 
 Intel x86 bare metal hypervisor for researching snapshot fuzzing ideas. 
 
+The blog describing the developement of the tool can be found [here](https://blog.talosintelligence.com/2020/08/barbervisor.html)
+
 ## Building
 
 Ensure `i586-pc-windows-msvc` and `x86_64-pc-windows-msvc` toolchains are installed and running nightly Rust.
