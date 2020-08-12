@@ -87,3 +87,10 @@ cargo doc --open
 ```
 
 The utilities also have READMEs giving a high level overview of what the tool is used for.
+
+## Components
+
+The project leverages a few existing code bases not in crates.io:
+
+* the underlying kernel is [Orange Slice](https://github.com/gamozolabs/orange_slice) by [Brandon Falk](twitter.com/gamozolabs)
+* the packet structure is a fork of [smoltcp](https://github.com/smoltcp-rs/smoltcp)
