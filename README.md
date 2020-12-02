@@ -4,6 +4,8 @@ Intel x86 bare metal hypervisor for researching snapshot fuzzing ideas.
 
 The blog describing the development can be found [here](https://blog.talosintelligence.com/2020/08/barbervisor.html)
 
+The underlying kernel for this hypervisor is [Orange Slice](https://github.com/gamozolabs/orange_slice) by [Brandon Falk](twitter.com/gamozolabs) and the packet structure for network traffic is a fork of [smoltcp](https://github.com/smoltcp-rs/smoltcp).
+
 ## Building
 
 Ensure `i586-pc-windows-msvc` and `x86_64-pc-windows-msvc` toolchains are installed and running nightly Rust.
@@ -92,5 +94,3 @@ The utilities also have READMEs giving a high level overview of what the tool is
 
 The project leverages a few existing code bases not in crates.io:
 
-* the underlying kernel is [Orange Slice](https://github.com/gamozolabs/orange_slice) by [Brandon Falk](twitter.com/gamozolabs)
-* the packet structure is a fork of [smoltcp](https://github.com/smoltcp-rs/smoltcp)
