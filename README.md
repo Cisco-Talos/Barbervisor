@@ -89,8 +89,3 @@ cargo doc --open
 ```
 
 The utilities also have READMEs giving a high level overview of what the tool is used for.
-
-## Components
-
-The project leverages a few existing code bases not in crates.io:
-
